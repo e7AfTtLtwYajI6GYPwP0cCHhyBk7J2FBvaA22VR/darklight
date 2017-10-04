@@ -1,11 +1,33 @@
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link rel="stylesheet" href="jQuery/Plugins/SlideBars/slidebars.min.css">
 <script src="jQuery/jquery-3.2.1.min.js.js"></script>
 <script src="jQuery/Plugins/SlideBars/slidebars.min.js"></script>
 <title>DarkLight MC (Hacked Client)</title>
 </head>
 <body>
-<p>test</p>
+    <div canvas="container">
+        Test
+        <div class="sb-open-left">MENU</div> 
+    </div>
+    <div class="sb-left left push">
+        Test
+    </div>
+
+<script>
+( function ( $ ) {
+ var controller = new slidebars();
+ controller.init();
+
+ $( '.sb-toggle-left' ).on( 'click', function ( event ) {
+ event.preventDefault();
+ event.stopPropagation();
+
+ controller.toggle( 'sb-left' );
+ } );
+
+} ) ( jQuery );
+</script>
 </body>
 </html>
