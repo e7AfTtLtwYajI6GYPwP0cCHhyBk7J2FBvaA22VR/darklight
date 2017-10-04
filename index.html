@@ -17,7 +17,12 @@
 </div>
 </div>
 <script>
-  $.slidebars();
+   $(document).ready(function() {
+      $.slidebars({
+        siteClose: true // true or false
+      });
+    });
+  }) (jQuery);
 </script>
 </body>
 </html>
