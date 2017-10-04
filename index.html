@@ -17,7 +17,18 @@
 </div>
 </div>
 <script>
-$.slidebars();
+var mySlidebar = new $.slidebars({
+  // メニューが開いているとき、コンテンツ部分をタッチしたら閉じる
+  siteClose: true,
+  // 指定したpx以上でドロワーメニューを開かなくする
+  disableOver: 480,
+  // disableOverで指定したサイズ以上にすると
+  // ドロワーメニューの開閉ボタンが非表示に
+  hideControlClasses: true,
+  // メニューを開いているときに、
+  // コンテンツがスクロールしないように固定してくれる
+  scrollLock: true
+});
 </script>
 </body>
 </html>
