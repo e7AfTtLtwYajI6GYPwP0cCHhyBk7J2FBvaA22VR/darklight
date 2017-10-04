@@ -14,12 +14,15 @@
 </nav>
  
 <section>
-<!-- コンテンツ部分 -->
+<h1 id="title">DarkLight Hacked Client</h1>
 </section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll-infinite.min.js"></script>
 <script>
+$(function() {
+$('#title').hide().fadeIn('slow');
+});
 $(document).ready(function() {
   $(".drawer").drawer();
 });
