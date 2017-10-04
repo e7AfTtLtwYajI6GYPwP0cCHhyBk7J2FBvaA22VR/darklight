@@ -8,15 +8,24 @@
 <div canvas="container">
 MainContent
 </div>
-    <div off-canvas="id-1 left reveal">
+    <div off-canvas="SlideBar left reveal">
     </div>
 <script src="https://darklight.tk/jQuery/jquery-3.2.1.min.js"></script>
 <script src="https://darklight.tk/jQuery/Plugins/SlideBars/slidebars.min.js"></script>
 <script>
 ( function ( $ ) {
-var controller = new slidebars();
-controller.init();
-} ) ( jQuery );
+      ( function ( $ ) {
+        var controller = new slidebars();
+        controller.init();
+        $( '.toggle-SlideBar' ).on( 'click', function ( event ) {
+          // Stop default action and bubbling
+          event.stopPropagation();
+          event.preventDefault();
+
+          // Toggle the Slidebar with id 'id-1'
+          controller.toggle( 'id-1' );
+        } );
+          } ) ( jQuery );
 </script>
 </body>
 </html>
