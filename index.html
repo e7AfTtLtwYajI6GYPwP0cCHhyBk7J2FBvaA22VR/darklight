@@ -7,27 +7,21 @@
 <title>DarkLight MC (Hacked Client)</title>
 </head>
 <body>
-    <div canvas="container">
-        Test
-        <div class="sb-open-left">MENU</div> 
-    </div>
-    <div class="sb-left left push">
-        Test
-    </div>
-
+<div class="menu sb-toggle-right"><a href="">MENU</a></div>
+ 
+<!-- メインコンテンツ -->
+<div id="sb-site">
+ 
+</div>
+ 
+<!-- ドロワーメニューのところ -->
+<div class="sb-slidebar sb-left">
+  <div class="sb-right-inner">
+ 
+  </div>
+</div>
 <script>
-( function ( $ ) {
- var controller = new slidebars();
- controller.init();
 
- $( '.sb-toggle-left' ).on( 'click', function ( event ) {
- event.preventDefault();
- event.stopPropagation();
-
- controller.toggle( 'sb-left' );
- } );
-
-} ) ( jQuery );
 </script>
 </body>
 </html>
